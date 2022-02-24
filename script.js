@@ -9,24 +9,29 @@ let guessed_numbers = [];
 
 function play(){
     let user_guess = document.getElementById("guess").value;
+
     if(user_guess < 1 || user_guess > 100){
         alert("Please enter a number between 1 and 100.");
+
     } else {
         guessed_numbers.push(user_guess);
         n_of_guesses+= 1;
+
         if(user_guess < answer){
             msg1.textContent = "Too low, try again";
             msg2.textContent = "N° of guesses : " + n_of_guesses;
-            msg3.textContent = "Guessed numbers are: " + guessed_numbers
+            msg3.textContent = "Guessed numbers are: " + guessed_numbers;
+
         } else if (user_guess > answer){
             msg1.textContent = "Too high, try again";
             msg2.textContent = "N° of guesses : " + n_of_guesses;
-            msg3.textContent = "Guessed numbers are: " + guessed_numbers
+            msg3.textContent = "Guessed numbers are: " + guessed_numbers;
         }
         else if(user_guess == answer){
             msg1.textContent = "YOU WIN!";
             msg2.textContent = "The number was: " + answer;
-            msg3.textContent = "You guessed it in " + n_of_guesses + "guesses";
+            msg3.textContent = "You guessed it in " + n_of_guesses + " guesses";
+            document.getElementById("my_btn").disabled = true;
         }
     }
 }
