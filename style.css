@@ -15,7 +15,8 @@ body {
 
 .container {
     position: absolute;
-    width: 70%;
+    max-width: 800px;
+    min-width: 450px;
     min-height: 450px;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -24,7 +25,7 @@ body {
     padding: 30px 20px;
     display: grid;
     justify-items: center;
-    border-radius: 5%;
+    border-radius: 10px;
 }
 
 h3 {
