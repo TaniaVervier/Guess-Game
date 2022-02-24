@@ -16,31 +16,30 @@ body {
 .container {
     position: absolute;
     width: 70%;
-    height: 70%;
+    min-height: 450px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     background-color: whitesmoke;
-    padding: 5%;
+    padding: 30px 20px;
     display: grid;
     justify-items: center;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 h3 {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 30px;
 }
 
 input {
     text-align: center;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 3%;
 }
 
 button {
     padding-left: 5%;
     padding-right: 5%;
     background-color: rgb(132, 132, 216);
-    border-radius: 5px;
+    border-radius: 5%;
 }
