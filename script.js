@@ -18,12 +18,12 @@ function play(){
         n_of_guesses+= 1;
 
         if(user_guess < answer){
-            msg1.textContent = "Too low, try again";
+            msg1.textContent = "Hmm..too low, try again";
             msg2.textContent = "N° of guesses : " + n_of_guesses;
             msg3.textContent = "Guessed numbers are: " + guessed_numbers;
 
         } else if (user_guess > answer){
-            msg1.textContent = "Too high, try again";
+            msg1.textContent = "Hmm..too high, try again";
             msg2.textContent = "N° of guesses : " + n_of_guesses;
             msg3.textContent = "Guessed numbers are: " + guessed_numbers;
         }
